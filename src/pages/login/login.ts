@@ -5,7 +5,9 @@ import {
   LoadingController,
   NavController
 } from 'ionic-angular';
+
 import {TabsPage} from "../tabs/tabs";
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'page-login',
@@ -18,7 +20,8 @@ export class LoginPage {
   constructor(
     private alertCtrl:AlertController,
     public loadingCtrl:LoadingController,
-    public navCtrl:NavController
+    public navCtrl:NavController,
+    private userService:UserService
   ){
 
   }
